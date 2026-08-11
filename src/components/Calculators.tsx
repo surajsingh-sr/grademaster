@@ -359,13 +359,13 @@ export function PercentageCalculator() {
             value={cgpaInput}
             onChange={(e) => setCgpaInput(e.target.value)}
           />
-          <SelectField label="University formula" value={formulaId} onChange={(e) => setFormulaId(e.target.value as typeof formulaId)}>
+          {/* <SelectField label="University formula" value={formulaId} onChange={(e) => setFormulaId(e.target.value as typeof formulaId)}>
             {PERCENTAGE_FORMULAS.map((f) => (
               <option key={f.value} value={f.value}>
                 {f.label}
               </option>
             ))}
-          </SelectField>
+          </SelectField> */}
           <Button block onClick={handleSave}>Save Result</Button>
         </div>
       </div>
